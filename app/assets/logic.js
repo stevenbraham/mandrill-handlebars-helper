@@ -5,20 +5,23 @@ function updateSetting(e) {
     var file = e.dataTransfer.files[0];
     switch (file.type) {
         case "text/html":
-            document.getElementById('htmlFile').setAttribute('value', file.path);
+            $("#htmlFile").val(file.path);
             break;
-        case "text/javascript":
-            document.getElementById('jsonFile').setAttribute('value', file.path);
+        case "application/json":
+            $("#jsonFile").val(file.path);
             break;
         default:
             break;
     }
+    postUpdate();
     return false;
 }
 
-document.getElementById("htmlFile").addEventListener("drop", updateSetting, false);
-document.getElementById("jsonFile").addEventListener("drop", updateSetting, false);
-
-function start() {
-
+function postUpdate() {
+    $.post('http://localhost:20755/updateConfig', $("#uploadForm").serialize());
 }
+
+$(document).ready(function () {
+    document.getElementById("htmlFile").addEventListener("drop", updateSetting, false);
+    document.getElementById("jsonFile").addEventListener("drop", updateSetting, false);
+});

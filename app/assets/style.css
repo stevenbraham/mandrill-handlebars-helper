@@ -23,12 +23,14 @@ footer, header, #content {
 }
 
 #uploadForm {
-    width: 30vw;
+    width: 70vw;
 }
 
-#uploadForm label, #uploadForm input {
-    padding: 1em 0 1em;
+#uploadForm input {
+    padding: 1em;
+    margin: 1em 0 1em;
     display: block;
+    width: 100%;
 }
 
 #start {

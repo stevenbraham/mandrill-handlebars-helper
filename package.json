@@ -1,0 +1,29 @@
+{
+  "name": "mandrill-handlebars-helper",
+  "version": "1.0.0",
+  "description": "A tool to inject json from a file in handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenbraham/mandrill-handlebars-helper.git"
+  },
+  "keywords": [
+    "handlebars",
+    "mandrill",
+    "tool"
+  ],
+  "author": "Steven Braham <steven@braham.biz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenbraham/mandrill-handlebars-helper/issues"
+  },
+  "homepage": "https://github.com/stevenbraham/mandrill-handlebars-helper#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "fs-sync": "^1.0.3"
+  }
+}

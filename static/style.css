@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+header, footer {
+    background: #2f1c1d;
+    color: white;
+}
+
+footer, header, #content {
+    padding: 2vw;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uploadForm {
+    width: 30vw;
+}
+
+#uploadForm label, #uploadForm input {
+    padding: 1em 0 1em;
+    display: block;
+}
+
+#start {
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    background: #317B44;
+    border: none;
+    cursor: pointer;
+    padding: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#start:hover {
+    background: #339266;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

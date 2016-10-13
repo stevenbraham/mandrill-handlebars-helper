@@ -28,6 +28,7 @@
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "fs-sync": "^1.0.3",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "open": "0.0.5"
   }
 }

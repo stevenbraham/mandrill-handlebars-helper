@@ -25,3 +25,8 @@ $(document).ready(function () {
     document.getElementById("htmlFile").addEventListener("drop", updateSetting, false);
     document.getElementById("jsonFile").addEventListener("drop", updateSetting, false);
 });
+
+function start() {
+    var open = require("open");
+    open("http://localhost:20755/");
+}

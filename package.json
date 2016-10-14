@@ -7,7 +7,7 @@
   "scripts": {
     "start": "electron ."
   },
-  "homepage": "https://github.com/stevenbraham/mandrill-handlebars-helper",
+  "homepage": "https://github.com/stevenbraham/mandrill-handlebars-helper#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stevenbraham/mandrill-handlebars-helper.git"
@@ -22,14 +22,14 @@
   "bugs": {
     "url": "https://github.com/stevenbraham/mandrill-handlebars-helper/issues"
   },
-  "homepage": "https://github.com/stevenbraham/mandrill-handlebars-helper#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "electron-prebuilt": "^1.4.3",
     "electron-window": "^0.8.1",
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5",
     "jquery": "^3.1.1",
+    "jsonfile": "^2.4.0",
     "open": "0.0.5"
   },
   "engines": {

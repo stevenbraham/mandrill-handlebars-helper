@@ -2,7 +2,7 @@
 
 ### What is this? ###
 
-Lately at my work I have to create a lot of e-mail templates in [Mandrill](https://www.mandrill.com/) using [Handlears](http://handlebarsjs.com/). The data in these e-mail's is injected by an API call. To test my templates, I would have to send an API call and wait for a response in my inbox.
+Lately at my work I have to create a lot of e-mail templates in [Mandrill](https://www.mandrill.com/) using [Handlebars](http://handlebarsjs.com/). The data in these e-mail's is injected by an API call. To test my templates, I would have to send an API call and wait for a response in my inbox.
 
 That’s why I wrote this open source tool. With this tool I can look how templates look using sample data from a API call stored in a JSON file. Even though it is primarily meant for e-mail templates, it should work for other applications.
 
@@ -30,6 +30,7 @@ Just like regular Handlebars.
 1. If you haven't already, please install the latest [NodeJS version for your OS](https://nodejs.org/)
 2. Clone this repository
 3. Run `npm install`
+
 ### How to use ###
 1. Run `npm start`
 2. A dialog will popup asking you for a html and json file

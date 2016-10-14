@@ -5,6 +5,7 @@ body {
     font-family: 'Lato', sans-serif;
     /*font-size: 1vw;*/
     text-transform: uppercase;
+    height: 80vh;
 }
 
 header, footer {
@@ -12,7 +13,7 @@ header, footer {
     color: white;
 }
 
-footer, header, #content {
+footer, header {
     padding: 2vw;
 }
 
@@ -20,6 +21,7 @@ footer, header, #content {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 #uploadForm {

@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A tool to inject json from a file in handlebars",
   "main": "main.js",
+  "bin": "./main.js",
   "scripts": {
     "start": "electron ."
   },
+  "homepage": "https://github.com/stevenbraham/mandrill-handlebars-helper",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stevenbraham/mandrill-handlebars-helper.git"
@@ -27,8 +29,10 @@
     "electron-window": "^0.8.1",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "fs-sync": "^1.0.3",
     "jquery": "^3.1.1",
     "open": "0.0.5"
+  },
+  "engines": {
+    "node": ">=0.10"
   }
 }

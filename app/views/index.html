@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../assets/style.css"/>
     <link rel="icon" href="//handlebarsjs.com/images/favicon.png"/>
     <script>window.$ = window.jQuery = require('jquery');</script>
+    <script>var open = require("open");</script>
 </head>
 <body>
 <header>
@@ -13,16 +14,15 @@
 </header>
 <div id="content">
     <form action="#" id="uploadForm">
-        <h1>Settings</h1>
         <div class="inputGroup">
             <label for="htmlFile">Html file</label>
-            <input type="text" id="htmlFile" name="htmlFile" placeholder="Drag a html file to this input box"/>
+            <input type="text" id="htmlFile" name="htmlFile" required placeholder="Drag a html file to this input box"/>
         </div>
         <div class="inputGroup">
             <label for="jsonFile">JSON file</label>
-            <input type="text" id="jsonFile" name="jsonFile" placeholder="Drag a json file to this input box"/>
+            <input type="text" id="jsonFile" name="jsonFile" required placeholder="Drag a json file to this input box"/>
         </div>
-        <a id="start" onclick="start()" href="#">Start</a>
+        <input type="submit" value="Start" id="start"/>
     </form>
 </div>
 <footer>

@@ -15,8 +15,13 @@
 <div id="content">
     <form action="#" id="uploadForm">
         <div class="inputGroup">
-            <label for="htmlFile">Html file</label>
-            <input type="text" id="htmlFile" name="htmlFile" required placeholder="Drag a html file to this input box"/>
+            <label for="bodyFile">Body html file</label>
+            <input type="text" id="bodyFile" name="bodyFile" placeholder="Drag a html file to this input box"/>
+            <div class="inputDescription">Optional. If provided the body template must contain {{> content }}</div>
+        </div>
+        <div class="inputGroup">
+            <label for="htmlFile">Content html file</label>
+            <input type="text" id="contentFile" name="contentFile" required placeholder="Drag a html file to this input box"/>
         </div>
         <div class="inputGroup">
             <label for="jsonFile">JSON file</label>

@@ -3,8 +3,6 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    /*font-size: 1vw;*/
-    text-transform: uppercase;
     height: 80vh;
 }
 
@@ -28,11 +26,19 @@ footer, header {
     width: 70vw;
 }
 
+#uploadForm label {
+    display: block;
+    margin: 1em 0 0.5em 0;
+    text-transform: uppercase;
+}
 #uploadForm input {
     padding: 1em;
-    margin: 1em 0 1em;
     display: block;
     width: 100%;
+}
+
+#uploadForm .inputDescription {
+    font: 11px BlinkMacSystemFont;
 }
 
 #start {

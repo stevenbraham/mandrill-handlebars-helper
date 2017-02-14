@@ -9,7 +9,23 @@ That’s why I wrote this open source tool. With this tool I can look how templa
 In fact, this tool supports all Handlebars expressions as long your json matches with the variables in your html file. It also can be used completely offline.
 ### File example ###
 
-If your html looks like this:
+Body html file:
+```html
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>This is the title</title>
+   <style>
+     /* some global styles */
+   </style>
+ </head>
+ <body>
+   <!-- content will be rendered here -->
+   {{> content}}
+ </body>
+</html>
+```
+Content html file:
 ```html
 <div class="entry">
   <h1>{{title}}</h1>
@@ -18,7 +34,7 @@ If your html looks like this:
   </div>
 </div>
 ```
-Your JSON file should like this:
+JSON file:
 ```json
 {
   "title": "My New Post",

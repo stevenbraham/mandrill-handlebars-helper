@@ -7,7 +7,8 @@ var jsonfile = require('jsonfile')
 
 config = {
     "jsonFile": "",
-    "htmlFile": ""
+    "bodyFile": "",
+    "contentFile": ""
 };
 
 webServer.use(express.static('server/static'));
@@ -15,8 +16,10 @@ webServer.use(bodyParser.json());
 webServer.use(bodyParser.urlencoded({extended: false}));
 webServer.listen(20755);
 webServer.get('/', function (req, res) {
-    var htmlSource = fs.readFileSync(config.htmlFile).toString();
-    var template = handlebars.compile(htmlSource);
+    var contentSource = fs.readFileSync(config.contentFile).toString();
+    var bodySource = fs.readFileSync(config.bodyFile).toString();
+    handlebars.registerPartial('content', contentSource);
+    var template = handlebars.compile(bodySource);
     res.send(template(jsonfile.readFileSync(config.jsonFile)));
 });
 
